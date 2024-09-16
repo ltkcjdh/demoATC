@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo21.HelloControllerReg">
+    <children>
+        <Button fx:id="exitclik" layoutX="449.0" layoutY="344.0" mnemonicParsing="false" onAction="#exitclik" prefHeight="31.0" prefWidth="107.0" text="Выход" />
+        <Button fx:id="and_clik1" layoutX="247.0" layoutY="344.0" mnemonicParsing="false" onAction="#and_clik" prefHeight="31.0" prefWidth="107.0" text="Регистрация" />
+        <RadioButton fx:id="checkB" layoutX="119.0" layoutY="226.0" mnemonicParsing="false" text="Муж">
+            <toggleGroup>
+                <ToggleGroup fx:id="groppol" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="checkB1" layoutX="188.0" layoutY="226.0" mnemonicParsing="false" text="Жен" toggleGroup="$groppol" />
+        <TextField fx:id="Voz" layoutX="187.0" layoutY="142.0" prefHeight="25.0" prefWidth="69.0" />
+        <TextField fx:id="Imy2ID" layoutX="407.0" layoutY="67.0" />
+        <TextField fx:id="Imy1ID" layoutX="110.0" layoutY="67.0" />
+        <Label layoutX="207.0" layoutY="14.0" prefHeight="43.0" prefWidth="175.0" text="Регистрация" textAlignment="CENTER">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="Soglas" layoutX="467.0" layoutY="307.0" mnemonicParsing="false" onAction="#SoglasON" text="Да">
+         <font>
+            <Font size="18.0" />
+         </font></CheckBox>
+        <DatePicker fx:id="Dataid" layoutX="201.0" layoutY="188.0" />
+        <Label layoutX="40.0" layoutY="66.0" prefHeight="27.0" prefWidth="62.0" text="Имя">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="187.0" prefHeight="27.0" prefWidth="134.0" text="Дата рождения">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="141.0" prefHeight="27.0" prefWidth="107.0" text="Возраст">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="294.0" layoutY="66.0" prefHeight="27.0" prefWidth="79.0" text="Логин">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="294.0" layoutY="141.0" prefHeight="27.0" prefWidth="99.0" text="Должность">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="42.0" layoutY="221.0" prefHeight="27.0" prefWidth="69.0" text="Пол">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="44.0" layoutY="307.0" prefHeight="27.0" prefWidth="390.0" text="Согласие на обработку персональных данных ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="langsComboBox" layoutX="407.0" layoutY="142.0" onAction="#ONComboBox" prefWidth="150.0" />
+      <Label layoutX="294.0" layoutY="102.0" prefHeight="27.0" prefWidth="79.0" text="Пароль">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Pass1_ID" layoutX="407.0" layoutY="103.0" />
+      <Label layoutX="44.0" layoutY="259.0" prefHeight="27.0" prefWidth="150.0" text="Секретное слово">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Pass2_ID" layoutX="214.0" layoutY="260.0" />
+      <Label layoutX="40.0" layoutY="102.0" prefHeight="27.0" prefWidth="62.0" text="Email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Email_id" layoutX="110.0" layoutY="103.0" />
+      <Button fx:id="exitclik2_id" layoutX="54.0" layoutY="344.0" mnemonicParsing="false" onAction="#exitclik2" prefHeight="31.0" prefWidth="107.0" text="Назад" />
+    </children>
+</Pane>

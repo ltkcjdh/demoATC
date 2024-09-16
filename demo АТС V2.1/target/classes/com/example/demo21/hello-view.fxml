@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo21.HelloController">
+    <children>
+        <Button fx:id="onButton" layoutX="246.0" layoutY="304.0" mnemonicParsing="false" onAction="#Buton_on" prefHeight="38.0" prefWidth="109.0" text="Войти" />
+        <Button layoutX="484.0" layoutY="323.0" mnemonicParsing="false" onAction="#Buton_exet" prefHeight="25.0" prefWidth="84.0" text="Выход" />
+        <Label layoutX="64.0" layoutY="100.0" text="Должность">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label layoutX="64.0" layoutY="147.0" text="Логин">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label layoutX="64.0" layoutY="192.0" text="Пароль">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label layoutX="64.0" layoutY="245.0" text="Секретное слово">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <ComboBox fx:id="dolg" layoutX="196.0" layoutY="98.0" onAction="#ONComboBox" prefWidth="150.0" />
+        <TextField fx:id="login" layoutX="197.0" layoutY="145.0" />
+        <TextField fx:id="pass2" layoutX="197.0" layoutY="243.0" />
+        <Label fx:id="pass_text" layoutX="480.0" layoutY="196.0" prefHeight="25.0" prefWidth="109.0" />
+        <CheckBox fx:id="showpass" layoutX="354.0" layoutY="200.0" mnemonicParsing="false" onAction="#showpass_clik" text="Показать пароль" />
+        <PasswordField fx:id="pass" layoutX="197.0" layoutY="196.0" />
+      <Label layoutX="208.0" layoutY="32.0" prefHeight="38.0" prefWidth="156.0" text="Авторизация ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Nev_user" layoutX="63.0" layoutY="323.0" mnemonicParsing="false" onAction="#Nev_user_Clic" text="Регистрация" />
+    </children>
+</Pane>
